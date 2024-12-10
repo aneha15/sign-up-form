@@ -10,7 +10,7 @@
     
     <div class="form-container">
         <div class="image">
-        <img src="images/jr-korpa-9XngoIpxcEo-unsplash.jpg" alt="">
+            <img src="images/jr-korpa-9XngoIpxcEo-unsplash.jpg" alt="">
          </div>
         <form class="form" action="#" method="get">
             <div class="header">
@@ -20,7 +20,7 @@
             <div class="contents">
                 <div class="row1">
                     <label for="name" aria-label="required">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Nelle" required>
+                    <input type="text" name="name" id="name" placeholder="Nelle" minlength="2" maxlength="20" required>
                 </div>
                 <div class="row2">
                     <label for="email" aria-label="required">Email</label>
@@ -28,14 +28,15 @@
                 </div>
                 <div class="row3">
                     <label for="pwd" aria-label="required">Password</label>
-                    <input type="password" name="pwd" id="pwd" required>
+                    <input type="password" name="pwd" id="pwd" minlength="7" maxlength="20" required>
                 </div>
                 <div class="signup">
-                    <button type="submit">Sign up</button>
+                    <button type="submit" class="create">Sign up</button>
                     <p>Already have an account? <button>Sign in</button></p>
                 </div>
             </div>
         </form>
+
     </div>
 </body>
 </html>
