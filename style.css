@@ -1,24 +1,20 @@
-/* color pallete 
-pink #ff1178 
-red #fe0000
-yelow #fff205
-blue #01fff4 #04d9ff
-green #7cff01 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #fbfaf2;
 }
     
 .form-container {
@@ -26,16 +22,17 @@ body {
 }
 
 img {
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 450px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 
+
 .form {
     background-color: #070d0d;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     padding: 30px 40px;
@@ -49,8 +46,8 @@ form h1 {
     margin-bottom: 12px;
 }
 .header p {
-    font-size: 16px;
-    color: azure;
+    font-size: 14px;
+    color: #fbfaf2;
     margin-bottom: 20px;
 }
 
@@ -61,10 +58,10 @@ form h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     flex-wrap: wrap;
-    font-size: 14px;
-    gap: 10px;
+    font-size: 12px;
+    gap: 5px;
 }
 
 .row1 {
@@ -77,17 +74,123 @@ form h1 {
     color: #01fff4;
 }
 input {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     background-color: #070d0d;
-    padding: 5px;
+    padding: 3px;
     border-radius: 3px;
     border: 1px solid #070d0d;
     border-bottom: 2px dashed #ff1178;
-    color: aliceblue;
-    width: 75%;
+    color:  #fbfaf2;
+    width: 70%;
+    outline: none;
 }
 
 label {
     font-weight: 600;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    color: #fbfaf2;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+}
+
+button[type='submit'] {
+    width: 40%;
+    height: 30px;
+    align-self: center;
+    border: none;
+    color: #fbfaf2;
+    font-weight: 600;
+    background-image: linear-gradient(
+        80deg,
+        hsl(334deg 100% 53%) 0%,
+        hsl(325deg 93% 61%) 13%,
+        hsl(307deg 70% 64%) 26%,
+        hsl(274deg 87% 73%) 39%,
+        hsl(239deg 100% 80%) 51%,
+        hsl(211deg 100% 70%) 64%,
+        hsl(197deg 100% 56%) 76%,
+        hsl(192deg 100% 50%) 88%,
+        hsl(189deg 100% 51%) 100%
+      );;
+    border-radius: 5px;
+}
+
+button[type='submit']:hover {
+    background-image: linear-gradient(
+        80deg,
+        hsl(189deg 100% 51%) 0%,
+        hsl(191deg 100% 50%) 8%,
+        hsl(193deg 100% 50%) 17%,
+        hsl(197deg 100% 56%) 25%,
+        hsl(206deg 100% 66%) 33%,
+        hsl(218deg 100% 73%) 42%,
+        hsl(239deg 100% 80%) 50%,
+        hsl(262deg 99% 77%) 58%,
+        hsl(285deg 75% 69%) 67%,
+        hsl(307deg 70% 64%) 75%,
+        hsl(321deg 87% 62%) 83%,
+        hsl(329deg 97% 59%) 92%,
+        hsl(334deg 100% 53%) 100%
+      );
+      opacity: 90%;
+}
+
+.signup > p {
+    text-align: center;
+    margin-top: 3px;
+}
+
+p > button {
+    font-size: 12px;
+    margin-left: 5px;
+    width: 25%;
+    height: 22px;
+    padding: 3px;
+    border: none;
+    font-weight: 500;
+    background-image: linear-gradient(
+        45deg,
+        hsl(91deg 100% 50%) 0%,
+        hsl(87deg 100% 50%) 18%,
+        hsl(84deg 100% 50%) 26%,
+        hsl(81deg 100% 50%) 33%,
+        hsl(78deg 100% 49%) 39%,
+        hsl(75deg 100% 49%) 44%,
+        hsl(72deg 100% 49%) 50%,
+        hsl(69deg 100% 49%) 56%,
+        hsl(67deg 100% 48%) 61%,
+        hsl(64deg 100% 48%) 67%,
+        hsl(62deg 100% 48%) 74%,
+        hsl(59deg 100% 48%) 82%,
+        hsl(57deg 100% 51%) 100%
+      );
+      border-radius: 5px;
+      color: #4a5d23;
+}
+
+p > button:hover {
+    background-image: linear-gradient(
+        45deg,
+        hsl(57deg 100% 51%) 0%,
+        hsl(59deg 100% 48%) 18%,
+        hsl(62deg 100% 48%) 26%,
+        hsl(64deg 100% 48%) 33%,
+        hsl(67deg 100% 48%) 39%,
+        hsl(69deg 100% 49%) 44%,
+        hsl(72deg 100% 49%) 50%,
+        hsl(75deg 100% 49%) 56%,
+        hsl(78deg 100% 49%) 61%,
+        hsl(81deg 100% 50%) 67%,
+        hsl(84deg 100% 50%) 74%,
+        hsl(87deg 100% 50%) 82%,
+        hsl(91deg 100% 50%) 100%
+      );
+
+      opacity: 85%;
 }
